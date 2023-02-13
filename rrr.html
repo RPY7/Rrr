@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>试验css</title>
+    <style>
+        body{
+            margin: 0%;
+            height: 100vh;
+            background-color: #eee;
+
+        }
+        .flex{
+            display: flex;
+        }
+        .bai{
+            background-color: aliceblue;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .flex1{
+            flex: 1;
+        }
+        .mg8{
+            margin: 8px;
+        }
+        .mgr8{
+            margin-right: 8px;
+        }
+        .mgt8{
+            margin-top: 8px;
+        }
+        .yinYing{
+            box-shadow:-5px 5px 10px -4px gray, 5px 5px 10px -4px gray;
+        }
+        .mgl8{
+            margin-left: 8px;
+        }
+    </style>
+<body class="flex" style="background-color: #d1cccc;">
+    <!--侧边栏-->
+    <div style="width: 150px; z-index:2 ;" class="bai yinYing" ></div>
+    <!--主栏-->
+    <div class=" flex flex1 column">
+        <!--头-->
+        <div style="height: 100px; z-index: 1;" class="bai yinYing mgt8 mgr8 mgl8"></div>
+        <!--内容-->
+        <div class="flex1 flex" style="overflow: auto;">
+            <!--左-->
+            <div style="flex: 3;" class="flex column mg8">
+                <!--上-->
+                <div style="height: 100px;" class="flex">
+                    <div class="flex1 mgr8 bai yinYing"></div>
+                    <div class="flex1 mgr8 bai yinYing"></div>
+                    <div class="flex1 mgr8 bai yinYing"></div>
+                    <div class="flex1 bai yinYing"></div>
+                </div>
+                <!--下-->
+                <div>
+                    <!--项-->
+                    <div style="height: 130px;" class="mgt8 bai yinYing"></div>
+                    <div style="height: 130px;" class="mgt8 bai yinYing"></div>
+                    <div style="height: 130px;" class="mgt8 bai yinYing"></div>
+                    <div style="height: 130px;" class="mgt8 bai yinYing"></div>
+                    <div style="height: 130px;" class="mgt8 bai yinYing"></div>
+                    <div style="height: 130px;" class="mgt8 bai yinYing"></div>
+                    <div style="height: 130px;" class="mgt8 bai yinYing"></div>
+                    <div style="height: 130px;" class="mgt8 bai yinYing"></div>
+                </div>
+            </div>
+            <!--右-->
+            <div style="flex: 1;" class="flex column mgr8 mgt8">
+                <!--上-->
+                <div style="height: 150px;" class="bai yinYing"></div>
+                <!--下-->
+                <div style="height: 300px;" class="bai mgt8 yinYing"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
